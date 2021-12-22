@@ -1,13 +1,8 @@
 import { useState } from "react";
 import StudentsList from "./StdLits";
 
-const Home = () => {
-    const [Students, setStudents] = useState([
-        {Name: 'mammad mammadian',GPA:'4.5',id:'1'},
-        {Name: 'sina ahmadi',GPA:'3.5',id:'2'},
-        {Name: 'iman salehi',GPA:'2',id:'3'},
-        {Name: 'karim karimi',GPA:'4.1',id:'4'},
-    ])
+const Home = ({setStudents,Students}) => {
+
 const handleDelete = (id) => {
      const newStudents = Students.filter(Students => Students.id !== id);
          setStudents(newStudents);

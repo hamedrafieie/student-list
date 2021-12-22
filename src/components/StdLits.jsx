@@ -1,8 +1,4 @@
 const StudentsList = ({ Students, title,handleDelete}) => {
-    // const Students = props.Students;
-    // const Name = props.Name;
-    // console.log(Students);
-
     return (
         <div className="Student-list">
             <h2>{ title }</h2>
