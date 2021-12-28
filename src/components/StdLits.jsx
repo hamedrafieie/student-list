@@ -6,7 +6,7 @@ const StudentsList = ({ Students, title,handleDelete}) => {
                 <div className="Student-preview" key={Student.id} >
                     <h2>{ Student.Name }</h2>
                     <p>GPA Score : { Student.GPA }</p>
-                    <button onClick={ () => handleDelete (Student.id)}> Delete </button>
+                    <button className="btn btn-secondary btn-sm" onClick={ () => handleDelete (Student.id)}> Delete </button>
                 </div>
             ))}
         </div>
